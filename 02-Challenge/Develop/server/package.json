@@ -5,10 +5,11 @@
   "main": "dist/server.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "watch": "nodemon dist/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "build": "tsc",
+  "start": "node dist/server.js",
+  "dev": "nodemon --ext ts --exec 'tsc && node dist/server.js'",
+  "watch": "nodemon dist/server.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
